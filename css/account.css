@@ -1,0 +1,212 @@
+.hide {
+  display: none;
+}
+.a-nav > li {
+  height: 100%;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.a-nav .a-center .submenu a {
+	display: block;
+    border: none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+}
+.a-nav > li .a-name,
+.a-nav > li .a-part {
+	width: auto;
+	margin: 0;
+	border: none;
+	padding: 0 8px;
+	line-height: 70px;
+	height: 100%;
+}
+.a-nav > li .a-name img {
+	width: 100%;
+	height: 100%;
+}
+.a-nav > li .a-name span,
+.a-nav > li .a-part span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.a-nav > li .a-name::after,
+.a-nav > li .a-part::after {
+  background-color: #fff;
+}
+.a-nav .submenu {
+  left: auto;
+  margin-left: 0;
+  right: -5px;
+}
+.a-nav .a-containter a {
+	border: none;
+	margin: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.a-nav .a-containter a span {
+	line-height: 1;
+}
+.a-nav .a-center {
+  margin-right: 0;
+}
+.a-nav .a-center .a-name span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #dee0e9;
+}
+.a-nav .a-center .a-name span img {
+  border-radius: 50%;
+  vertical-align: baseline;
+}
+.a-nav .a-center .submenu {
+  width: 180px;
+}
+.a-nav .a-center .submenu li {
+  text-align: center;
+}
+.a-nav .a-services {
+  margin-left: 10px;
+}
+.a-nav .a-services .submenu {
+  width: 328px;
+  border-radius: 6px;
+  border: none;
+  top: 100%;
+}
+.a-nav .a-services .a-part span {
+  width: 24px;
+  height: 24px;
+  background: url(../images/business-icon.svg);
+}
+.a-name span {
+  line-height: 42px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.a-containter {
+  padding: 40px 28px 20px 28px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.24);
+  border: 1px solid #dee0e9;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.a-containter .a-arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 16px;
+  border: 8px solid transparent;
+}
+.a-containter .a-arrow1 {
+  top: -18px;
+  border-bottom: 10px solid #dee0e9;
+}
+.a-containter .a-arrow2 {
+  top: -16px;
+  border-bottom: 10px solid #fff;
+}
+.a-containter ul {
+  width: 270px;
+  line-height: 14px;
+  font-size: 0;
+}
+.a-containter ul li {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fff;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 14px;
+}
+.a-containter ul li:nth-child(3n+4) {
+  margin-top: 24px;
+}
+.a-containter ul li:hover {
+  border: 1px solid #eee;
+}
+.a-containter ul li .a-icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+}
+.a-containter ul li span {
+  display: block;
+  padding-top: 8px;
+  font-size: 12px;
+  color: #484848;
+}
+.a-containter .a-title {
+  margin: 32px 0 24px 0;
+  position: relative;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+  color: #484848;
+}
+.a-containter .a-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 24%;
+  height: 1px;
+  background-color: #eee;
+}
+.a-containter .a-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 24%;
+  height: 1px;
+  background-color: #eee;
+}
+.a-containter .a-des {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  color: #adadb6;
+}
+.a-containter .a-des p {
+  line-height: 1.4;
+  font-size: 12px;
+}
+.menu > ul > li {
+  margin-right: 40px;
+}
+@media (max-width: 1360px){
+  .header .container{
+        width: 1080px;
+    }
+    .menu > ul > li{
+        margin-right: 20px;
+    }
+    .menu>ul>li>a{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width:1280px) {
+  .menu > ul > li{
+    margin-right: 15px;
+  }
+}
+
