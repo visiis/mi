@@ -147,23 +147,41 @@
     </div>
 </div>
 
-<div class="main-menu">
+<div class="main-menu main-menu2">
     <div class="container">
-        <a href="#" class="cur">用户获取</a>
-        <a href="#"  class="">标题变化</a>
-        <a href="#" class="">广告代理</a>
+        <a href="#" class="">微信公众号</a>
+        <a href="#"  class="cur">微博博主</a>
+        <a href="#"  class="">直播网红</a>
+        <a href="#" class="">短视频自媒体</a>
     </div>
 </div>
+
 <article>
 
     <!-- 关于我们内容变化 开始-->
-    关于我们的内容
+    <section class="blog-sec blog-sec2">
+        <div class="container">
+            <div class="wow main-tit show_bottom fadeInUp">博主内容互动分析</div>
+            <div class="wow blog-sec-img show_mask fadeInUp">
+                <img src="upimg/blog-img2.png" class="img-responsive" />
+            </div>
+        </div>
+    </section>
+    <section class="blog-sec blog-sec3">
+        <div class="container">
+            <div class="wow main-tit show_bottom fadeInUp">互动分析筛选博主</div>
+            <div class="wow blog-sec-img show_mask fadeInUp">
+                <img src="upimg/blog-img3.png" class="img-responsive"/>
+            </div>
+        </div>
+    </section>
+
     <!-- 关于我们内容变化 结束-->
 
     <section class="message" id="message">
         <div class="container">
             <div class="wow sec-tit show_bottom fadeInUp">请留下您的联系方式，我们将马上与您联系</div>
-            <form class="message-form show_bottom" data-scroll-watch method="post" action="#" id="msg" >
+            <form class="wow message-form show_bottom fadeInUp" method="post" action="#" id="msg" >
                 <input type="hidden" name="formToken" value="23c71340167a82d0859b4e8940e64e7e">
                 <div class="input-inline">
                     <div class="msg-ipt msg-ipt1">
@@ -348,86 +366,243 @@
 <script src="js/scorllWatch.js"></script>
 <script src="js/jquery.nice-select.js"></script>
 <script type="text/javascript">
-    $('.newBridge').css({'display': 'none'});
-    $('.subscribe-btn').click(function () {
+    $('.newBridge').css({'display':'none'});
+    $('.subscribe-btn').click(function(){
         var $data = $('#subscribe').serialize();
-        var url = '/email.html';
+        var url='/email.html';
         $.ajax({
-            data: $data,
-            method: 'post',
-            url: url,
-            dataType: 'json',
-            success: function (msg) {
-                if (msg == '1') {
-                    lyAlert('订阅成功！', 3000);
+            data:$data,
+            method:'post',
+            url:url,
+            dataType:'json',
+            success:function(msg){
+                if(msg == '1')
+                {
+                    lyAlert('订阅成功！',3000);
                     $('input').val('');
 
-                } else {
-                    yAlert('订阅失败！', 3000);
+                }else{
+                    yAlert('订阅失败！',3000);
                 }
 
             },
-            error: function (msg) {
+            error:function(msg){
             }
         });
     })
 </script>
+<div style="display:none">
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-4002880-2" async ></script>
+    <script type="text/javascript">
+        var analytics = function () {
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?7efad55d7069a2e0820bb0cf0a0ada5a";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments)
+            };
+            gtag('js', new Date());
+            gtag('config', 'UA-4002880-2');
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", analytics, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", analytics);
+        else
+            window.onload = analytics;
+    </script>
+    <script src="https://www.sobot.com/chat/frame/js/entrance.js?sysNum=83445326e47240478d282b058cc25244" id="zhichiScript" class="zhiCustomBtn"></script>
+    <script>
+        var zhiManager = (getzhiSDKInstance());
+        zhiManager.set('customBtn', 'true');
+        zhiManager.set('groupId','9ad769695d854150a380babba075e19b');
+    </script>
+    <script>
+        (function () {
+            var yc = document.createElement("script");
+            yc.src = "https://youcloud.com/js/youcloud-public-service.js?" + new Date().getTime();
+            yc.defer = "defer";
+
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(yc, s);
+        })();
+        window.ycDataLayer = {
+            sidebar: {
+                id: 'youcloud-services-center',
+                assetsDomain: 'https://youcloud.com',
+                accountDomain: 'https://account.youcloud.com'
+            }
+        }
+    </script>
+</div>
+
 <script src="js/swiper.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.countup.min.js"></script>
-<script src="js/stellar.js"></script>
 <script>
-    $(function () {
-
-        var ws2 = new ScrollWatch({
-            watchOffset: -50,
-            onElementInView: function (data) {
-
-                if (data.el.id == 'case') {
-
-                    var caseSwiper = new Swiper('.case-container', {
-                        nextButton: ".case-con .swiper-button-next",
-                        prevButton: ".case-con .swiper-button-prev",
-                        autoplay: 8e3,
-                        speed: 800,
-                        loop: true,
-                        autoplayDisableOnInteraction: false,
-                        effect: 'fade',
-
-                        onTransitionStart: function () {
-                            $('.case-container .swiper-wrapper .swiper-slide').removeClass('ani-slide');
-                            // var length=$('.case-container .swiper-wrapper .swiper-slide').length;
-                            // for(i=0;i<length;i++){
-                            //     slide=$('.case-container .swiper-wrapper .swiper-slide').eq(i);
-                            //     slide.removeClass('ani-slide');
-
-                            // }
-                        },
-                        onTransitionEnd: function (swiper) {
-                            slide = $('.case-container .swiper-wrapper .swiper-slide').eq(swiper.activeIndex);
-                            slide.find('.counter').countUp();
-                            slide.addClass('ani-slide');
-                        }
-
-
-                    });
+    //切换二级菜单
+    function change_type(e){
+        var $this = $(e);
+        $this.addClass('active');
+        $this.siblings().removeClass('active');
+        var $type_id=$this.data('type');
+        var url = "/resources/change_type2.html";
+        $.ajax({
+            url:url,
+            dataType:"json",
+            data:{'type_id':$type_id},
+            type:"post",
+            success:function(req){
+                var label=req['label'];
+                var blog=req['blog'];
+                var labelCon="";
+                var blogCon="";
+                for(var i=0;i<label.length;i++){
+                    if(label[0]==label[i]){
+                        labelCon +="<a class='active' onClick='change_con(this);' data-label="+label[i]+">"+ label[i] +"</a>";
+                    }else{
+                        labelCon +="<a onClick='change_con(this);' data-label="+label[i]+">"+ label[i] +"</a>";
+                    }
                 }
+                $('#type').html('');
+                $('#type').append(labelCon);
+                for(var i=0;i<blog.length;i++){
+                    blogCon+="<li class=\"flip\" data-scroll-watch>"
+                            +"<a href=\"\">"
+                            +"<div class=\"blog-icon\"><img src=\""+blog[i]['img_url']+"\"/></div>"
+                            +"<div class=\"tit\">"+blog[i]['title']+"</div>"
+                            + "<div class=\"info\">"
+                            +"<div>粉丝数<span>"+blog[i]['fans']+"</span></div>"
+                            +"<div>阅读数<span>"+blog[i]['reader']+"</span></div>"
+                            +"</div>"
+                            +" <div class=\"price\">查看报价</div>"
+                            +"</a>"
+                            +"</li>"
+                }
+                $('#blog').html('');
+                $('#blog').append(blogCon);
+                var ws = new ScrollWatch({
+                    watchOffset: -50,
+                    onElementInView:function(data){
+                    }
+                });
+            },
+            error:function(msg){
+
             }
         });
-    });
-    function stellarGo() {
-        var $winW = $(window).width();
-        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
-        if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
-
-        }
-
-        if ($winW > 1200) {
-            // 视差插件
-            $.stellar({horizontalScrolling: false, verticalOffset: 40, responsive: true});
-        }
     }
+
+    function change_con(e){
+        var $this = $(e);
+        $this.addClass('active');
+        $this.siblings().removeClass('active');
+        var $label=$this.data('label');
+        var url = "/resources/change_con2.html";
+        $.ajax({
+            url:url,
+            dataType:"json",
+            data:{'label':$label},
+            type:"post",
+            success:function(req){
+                $('#blog').html('');
+                $('#blog').append(req);
+                if(!req){
+                    $('#det').hide();
+                }else{
+                    $('#det').html('更多');
+                    $('#det').show();
+                }
+                var ws = new ScrollWatch({
+                    watchOffset: -50,
+                    onElementInView:function(data){
+                    }
+                });
+            },
+            error:function(msg){
+
+            }
+        });
+    }
+    $(function(){
+        //滚动动画
+        var $ww=$(window).width();
+        if($ww>768){
+            var ws = new ScrollWatch({
+                watchOffset: -50,
+                onElementInView:function(data){
+                }
+            });
+        }
+
+        //点击查看更多
+        $('.det').click(function(){
+            var $pageNum = $(this).attr('data-page');
+            $pageNum = parseInt($pageNum)+1;
+            var $type =$('.tabs a.active').data('type');
+            var $label=$('.tabs2 a.active').data('label');
+            var url = "/resources/getmore2.html";
+
+            $.ajax({
+                url:url,
+                dataType:"json",
+                data:{'type_id':$type,'label':$label,'pageNum':$pageNum},
+                type:"post",
+                success:function(req){
+                    $('#det').attr('data-page',$pageNum);
+                    $('#blog').append(req);
+                    if(req==''){
+                        $('#det').html('没有了');
+                    }else{
+                        $('#more').html('更多');
+                    }
+                    var ws = new ScrollWatch({
+                        watchOffset: -50,
+                        onElementInView:function(data){
+                        }
+                    });
+                },
+                error:function(msg){ console.log(msg); }
+            });
+
+        })
+
+    })
+
+
+</script>
+<script type="text/javascript">
+    var tabsSwiper1 = new Swiper('.forms-img',{
+        speed:500,
+        autoHeight: true,
+        onSlideChangeStart: function(){
+            $(".ads-form .tabs .active").removeClass('active');
+            $(".ads-form .tabs a").eq(tabsSwiper1.activeIndex).addClass('active');
+        }
+    });
+    var tabsSwiper2 = new Swiper('.forms-txt',{
+        speed:500,
+        autoHeight: true,
+        onSlideChangeStart: function(){
+            $(".ads-form .tabs .active").removeClass('active');
+            $(".ads-form .tabs a").eq(tabsSwiper1.activeIndex).addClass('active');
+        }
+    });
+    $(".ads-form .tabs a").on('touchstart mousedown',function(e){
+        e.preventDefault()
+        $(".ads-form .tabs .active").removeClass('active');
+        $(this).addClass('active');
+        tabsSwiper1.slideTo($(this).index());
+        tabsSwiper2.slideTo($(this).index());
+    });
+
+    $(".ads-form .tabs a").click(function(e){
+        e.preventDefault();
+    });
 </script>
 <script src="js/wow.min.js"></script>
 <script>

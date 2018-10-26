@@ -26,7 +26,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.validate.js"></script>
+
+
     <script src="js/main.js?v=1.2"></script>
+
+
 
     <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/apps.css?v=1.0"/>
@@ -147,23 +151,96 @@
     </div>
 </div>
 
-<div class="main-menu">
+<div class="main-menu main-menu2">
     <div class="container">
-        <a href="#" class="cur">用户获取</a>
-        <a href="#"  class="">标题变化</a>
-        <a href="#" class="">广告代理</a>
+        <a href="#" class="">微信公众号</a>
+        <a href="#"  class="">微博博主</a>
+        <a href="#"  class="cur">直播网红</a>
+        <a href="#" class="">短视频自媒体</a>
     </div>
 </div>
+
 <article>
 
     <!-- 关于我们内容变化 开始-->
-    关于我们的内容
+    <section class="blog-sec blog-sec2 extension-sec">
+        <div class="container">
+            <div class="wow main-tit show_bottom fadeInUp">推广方式</div>
+            <div class="swiper-container extension">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="extension-left">
+                            <div class="tit">现场活动<span>屈臣氏</span></div>
+                            <div class="txt">
+                                <p>
+                                    四城29位网红在自身周边渠道（个人微博、朋友圈、直播平台）上进行活动预热，引导粉丝关注第二天直播活动。
+                                </p>
+                                <p>
+                                    直播过程中通过粉丝互动、奖品发送等延续直播热度，增加线下到店人数，既提高了屈臣氏夏日护肤旺季促销活动的关注度，同时也引导受众人群进行消费，提高产品销量。
+                                </p>                                </div>
+                        </div>
+                        <div class="extension-right">
+                            <img src="upimg/2018-04-22-16-05-28.jpg"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="extension-left">
+                            <div class="tit">线上活动<span>猎趣&淘宝</span></div>
+                            <div class="txt">
+                                <p>
+                                    5位主播通过微博话题预热第二天销售私人闲置物的直播活动，线上直播自然介绍带出买卖闲置品的猎趣平台，并将私人物品放到猎趣平台售卖，引发了粉丝在微博话题、朋友圈讨论并下载APP进行疯狂抢购的行动，既在社交平台引发了话题讨论增加平台曝光度，同时也展示平台的功能，一举多得。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="extension-right">
+                            <img src="upimg/2018-04-27-18-25-19.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="process-con">
+
+        <div class="main-tit">推广流程</div>
+        <div class="process-list">
+            <ul>
+                <li class="wow show_bottom fadeInUp">
+                    <div class="ad-icon"><img src="upimg/process1.png"/></div>
+                    <div class="ad-txt">添加主播到推广意向</div>
+                </li>
+                <li class="wow show_bottom fadeInUp">
+                    <div class="ad-icon"><img src="upimg/process2.png"/></div>
+                    <div class="ad-txt">导出意向单联系我们沟通需求</div>
+                </li>
+                <li class="wow show_bottom fadeInUp">
+                    <div class="ad-icon"><img src="upimg/process3.png"/></div>
+                    <div class="ad-txt">平台充值确定意向</div>
+                </li>
+                <li class="wow show_bottom fadeInUp">
+                    <div class="ad-icon"><img src="upimg/process4.png"/></div>
+                    <div class="ad-txt">平台联系主播确定需求</div>
+                </li>
+                <li class="wow show_bottom fadeInUp">
+                    <div class="ad-icon"><img src="upimg/process5.png"/></div>
+                    <div class="ad-txt">平台扣款锁定执行</div>
+                </li>
+                <li class="wow show_bottom fadeInUp">
+                    <div class="ad-icon"><img src="upimg/process6.png"/></div>
+                    <div class="ad-txt">平台跟踪执行反馈结果</div>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+
+    </section>
     <!-- 关于我们内容变化 结束-->
 
     <section class="message" id="message">
         <div class="container">
             <div class="wow sec-tit show_bottom fadeInUp">请留下您的联系方式，我们将马上与您联系</div>
-            <form class="message-form show_bottom" data-scroll-watch method="post" action="#" id="msg" >
+            <form class="wow message-form show_bottom fadeInUp" method="post" action="#" id="msg" >
                 <input type="hidden" name="formToken" value="23c71340167a82d0859b4e8940e64e7e">
                 <div class="input-inline">
                     <div class="msg-ipt msg-ipt1">
@@ -345,96 +422,126 @@
 </body>
 
 <!-- 统计代码 -->
+
+
+
 <script src="js/scorllWatch.js"></script>
 <script src="js/jquery.nice-select.js"></script>
 <script type="text/javascript">
-    $('.newBridge').css({'display': 'none'});
-    $('.subscribe-btn').click(function () {
+    $('.newBridge').css({'display':'none'});
+    $('.subscribe-btn').click(function(){
         var $data = $('#subscribe').serialize();
-        var url = '/email.html';
+        var url='/email.html';
         $.ajax({
-            data: $data,
-            method: 'post',
-            url: url,
-            dataType: 'json',
-            success: function (msg) {
-                if (msg == '1') {
-                    lyAlert('订阅成功！', 3000);
+            data:$data,
+            method:'post',
+            url:url,
+            dataType:'json',
+            success:function(msg){
+                if(msg == '1')
+                {
+                    lyAlert('订阅成功！',3000);
                     $('input').val('');
 
-                } else {
-                    yAlert('订阅失败！', 3000);
+                }else{
+                    yAlert('订阅失败！',3000);
                 }
 
             },
-            error: function (msg) {
+            error:function(msg){
             }
         });
     })
 </script>
+
 <script src="js/swiper.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.countup.min.js"></script>
-<script src="js/stellar.js"></script>
-<script>
-    $(function () {
-
-        var ws2 = new ScrollWatch({
-            watchOffset: -50,
-            onElementInView: function (data) {
-
-                if (data.el.id == 'case') {
-
-                    var caseSwiper = new Swiper('.case-container', {
-                        nextButton: ".case-con .swiper-button-next",
-                        prevButton: ".case-con .swiper-button-prev",
-                        autoplay: 8e3,
-                        speed: 800,
-                        loop: true,
-                        autoplayDisableOnInteraction: false,
-                        effect: 'fade',
-
-                        onTransitionStart: function () {
-                            $('.case-container .swiper-wrapper .swiper-slide').removeClass('ani-slide');
-                            // var length=$('.case-container .swiper-wrapper .swiper-slide').length;
-                            // for(i=0;i<length;i++){
-                            //     slide=$('.case-container .swiper-wrapper .swiper-slide').eq(i);
-                            //     slide.removeClass('ani-slide');
-
-                            // }
-                        },
-                        onTransitionEnd: function (swiper) {
-                            slide = $('.case-container .swiper-wrapper .swiper-slide').eq(swiper.activeIndex);
-                            slide.find('.counter').countUp();
-                            slide.addClass('ani-slide');
-                        }
-
-
-                    });
+<script type="text/javascript">
+    function change_type(e){
+        var $this = $(e);
+        $this.addClass('active');
+        $this.siblings().removeClass('active');
+        var $type_id=$this.data('type');
+        var url = "/resources/change_type3.html";
+        $.ajax({
+            url:url,
+            dataType:"json",
+            data:{'type_id':$type_id},
+            type:"post",
+            success:function(req){
+                $('#live').html('');
+                $('#live').append(req);
+                if(!req){
+                    $('#det').hide();
+                }else{
+                    $('#det').html('更多');
+                    $('#det').show();
                 }
+                var ws = new ScrollWatch({
+                    watchOffset: -50,
+                    onElementInView:function(data){
+                    }
+                });
+            },
+            error:function(msg){ console.log(msg); }
+        });
+    }
+    $(function(){
+        //滚动动画
+        var ws = new ScrollWatch({
+            watchOffset: -50,
+            onElementInView:function(data){
             }
         });
+        $('.det').click(function(){
+            var $pageNum = $(this).attr('data-page');
+            $pageNum = parseInt($pageNum)+1;
+            var $type =$('.tabs a.active').data('type');
+            var url = "/resources/getmore3.html";
+
+            $.ajax({
+                url:url,
+                dataType:"json",
+                data:{'type_id':$type,'pageNum':$pageNum},
+                type:"post",
+                success:function(req){
+                    $('#det').attr('data-page',$pageNum);
+                    $('#live').append(req);
+                    if(req==''){
+                        $('#det').html('没有了');
+                    }else{
+                        $('#more').html('更多');
+                    }
+                    var ws = new ScrollWatch({
+                        watchOffset: -50,
+                        onElementInView:function(data){
+                        }
+                    });
+                },
+                error:function(msg){ console.log(msg); }
+            });
+
+        })
+
+    })
+    var extensionSwiper = new Swiper('.extension', {
+        pagination: '.extension-sec .swiper-pagination',
+        paginationClickable: true,
+        autoplay:20000,
+        speed:800,
+        loop : true,
+        autoplayDisableOnInteraction : false,
+
     });
-    function stellarGo() {
-        var $winW = $(window).width();
-        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
-        if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
-
-        }
-
-        if ($winW > 1200) {
-            // 视差插件
-            $.stellar({horizontalScrolling: false, verticalOffset: 40, responsive: true});
-        }
-    }
 </script>
+
+
 <script src="js/wow.min.js"></script>
 <script>
     if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
         new WOW().init();
     }
 </script>
+
 <!-- 统计代码 -->
 
 </html>
