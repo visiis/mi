@@ -29,13 +29,13 @@
     <script src="js/main.js?v=1.2"></script>
 
     <link rel="stylesheet" href="css/swiper.min.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/apps.css?v=1.0"/>
 </head>
 
 <body>
 
 <!-- 头部 -->
-<header class="header ">
+<header class="header on">
     <div class="container">
         <div class="header-in">
             <a href="/" title="网站名称" class="logo fl">
@@ -133,297 +133,34 @@
     </div>
 </header>
 
-<!-- 焦点图 -->
-<div class="ym-banner">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide1">
-                <div class="banner-img"
-                     style="background-position:center top;background-image: url(img/banner.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/banner.jpg');">
-                    <a href="javascript:void(0)" style="display:block;width:100%;height:100%;"></a></div>
-                <div class="banner-txt txt">
-                    <div class="container">
-                        <div class="wow txt1 fadeInUp">移动营销 选我们</div>
-                        <div class="wow txt2 fadeInUp">效果突出的全球化移动广告与营销平台</div>
-                        <a class="wow btn fadeInUp" style="animation-delay:1s;-webkit-animation-delay:1s;"
-                           href="#">我要投放</a>
-                    </div>
-                </div>
-            </div>
-
+<div class="banner">
+    <picture >
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="img/2018-08-01-17-57-49.jpg" media="(max-width: 768px)">
+        <source srcset="img/2018-04-19-11-08-56.jpg">
+        <!--[if IE 9]></video><![endif]-->
+        <!-- 回退 -->
+        <img src="img/2018-04-19-11-08-56.jpg" alt="广告代理" class="responsive">
+    </picture>
+    <div class="apps-txt">
+        <div class="container">
+            <div class="wow show_bottom fadeInUp">为产品找到最合适的流量资源-文字变化</div>
         </div>
-        <div class="swiper-button-prev"><span></span></div>
-        <div class="swiper-button-next"><span></span></div>
-        <ul class="swiper-pagination autoplay"></ul>
-        <div class="mouse"></div>
+    </div>
+</div>
+
+<div class="main-menu">
+    <div class="container">
+        <a href="#" class="">用户获取</a>
+        <a href="#"  class="cur">标题变化</a>
+        <a href="#" class="">广告代理</a>
     </div>
 </div>
 
 <!-- 内容区 -->
 <article>
 
-    <!-- 互联网 -->
-    <section class="profile">
-        <div class="container">
-            <div class="wow sec-tit show_bottom fadeInUp">丰富的广告资源, 覆盖85%移动互联网用户</div>
-            <div class="wow profile-con fadeInUp" style="animation-delay:.5s;-webkit-animation-delay:.5s; ">
-                <p>整合全球跨平台APP超过30万款，日均竞价的广告流量超过53亿。In-App、DSP、社媒流量应有尽有。</p>
-                <p>足不出户与全球优质用户互联，将您优质的商业信息传递给最需要的人群。</p>
-            </div>
-            <div class="map-container" data-scroll-watch>
-                <picture>
-                    <!--[if IE 9]>
-                    <video style="display: none;"><![endif]-->
-                    <source srcset="img/map-phone.jpg" media="(max-width: 1200px)">
-                    <source srcset="img/map.jpg">
-                    <!--[if IE 9]></video><![endif]-->
-                    <!-- 回退 -->
-                    <img src="img/map.jpg" class="img-responsive"/>
-                </picture>
-                <div class="dot dot1"><span></span>美国</div>
-                <div class="dot dot2">英国<span></span></div>
-                <div class="dot dot3"><span></span>德国</div>
-                <div class="dot dot4"><span></span>俄罗斯</div>
-                <div class="dot dot5">北京<span></span></div>
-                <div class="dot dot6">韩国<span></span></div>
-                <div class="dot dot7"><span></span>日本</div>
-                <div class="dot dot8">上海<span></span></div>
-                <div class="dot dot9"><span></span>杭州</div>
-                <div class="dot dot10">广州<span></span></div>
-                <div class="dot dot11"><span></span>深圳</div>
-                <div class="dot dot12">印度<span></span></div>
-                <div class="dot dot13"><span></span>澳大利亚</div>
-            </div>
-            <a class="wow btn fadeInUp" data-scroll-watch href="#message">我要投放广告</a>
-        </div>
-    </section>
 
-    <!-- 我们的优势 -->
-    <section class="advantage">
-        <div class="wow sec-tit show_bottom fadeInUp">我们的优势</div>
-        <div class="advantage-list">
-            <ul>
-                <li class="img_scale">
-                    <a href="javascrpit:void(0)" onclick="return false;">
-                        <div class="advantage-img"><img src="img/banner2.png"/></div>
-                        <div class="mask">
-                            <div class="con-warp">
-                                <div class="number">01</div>
-                                <div class="tit">创新产品</div>
-                                <div class="summary">众多行业首创的广告形式，多样化创意玩转流量，独有的内容媒体资源，品效共振，助力客户登顶营销巅峰！</div>
-                                <!-- <div class="det">了解详情</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="img_scale">
-                    <a href="javascrpit:void(0)" onclick="return false;">
-                        <div class="advantage-img"><img src="img/banner3.png"/></div>
-                        <div class="mask">
-                            <div class="con-warp">
-                                <div class="number">02</div>
-                                <div class="tit">领先技术</div>
-                                <div class="summary">2800个数据标签，多维度描绘精准用户画像，独家防作弊系统，实时过滤无效流量，提供数据工具，提升优化效率。</div>
-                                <!-- <div class="det">了解详情</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="img_scale">
-                    <a href="javascrpit:void(0)" onclick="return false;">
-                        <div class="advantage-img"><img src="img/banner4.png"/></div>
-                        <div class="mask">
-                            <div class="con-warp">
-                                <div class="number">03</div>
-                                <div class="tit">精细运营</div>
-                                <div class="summary">垂直行业解决方案，精细化运营，以数据说话。优化师团队7*24小时专业服务，转化率一高再高！</div>
-                                <!-- <div class="det">了解详情</div> -->
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <div class="clearfix"></div>
-        </div>
-    </section>
-
-    <!-- 成功案例 -->
-    <section class="case">
-        <div class="wow sec-tit show_bottom fadeInUp" id="case" data-scroll-watch>成功案例</div>
-        <div class="case-con">
-            <div class="container">
-
-                <div class="swiper-container container case-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="case-left"><img src="img/818.png"/></div>
-                            <div class="case-right">
-                                <div class="num-list">
-                                    <ul>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">1.2</span>亿
-                                                </div>
-                                                <div class="counter-txt">曝光量</div>
-                                            </div>
-                                        </li>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">365.44</span>%
-                                                </div>
-                                                <div class="counter-txt">新增激活用户数环比上涨</div>
-                                            </div>
-                                        </li>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">100</span>%
-                                                </div>
-                                                <div class="counter-txt">项目KPI完成率</div>
-                                            </div>
-                                        </li>
-
-
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="case-txt">多素材组合投放高效成交燃爆“电商剁手节”</div>
-                                <div class="case-info">
-
-                                    <p>多人群包组合，精准定向目标</p>
-
-                                    <p>海量高质素材，充分抓住用户</p>
-
-                                    <p>高频监测，快速优化</p>
-                                </div>
-                                <a class="btn" href="#">案例详情</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="case-left"><img src="img/819.png"/></div>
-                            <div class="case-right">
-                                <div class="num-list">
-                                    <ul>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">10</span>万+
-                                                </div>
-                                                <div class="counter-txt">半月激活用户</div>
-                                            </div>
-                                        </li>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">3000</span>+
-                                                </div>
-                                                <div class="counter-txt">日均导入量</div>
-                                            </div>
-                                        </li>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">40</span>+
-                                                </div>
-                                                <div class="counter-txt">素材创意制作</div>
-                                            </div>
-                                        </li>
-
-
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="case-txt">综合运用社交流量为龙之谷导入优质用户</div>
-                                <div class="case-info">
-
-                                    <p>In-Apps视频广告触达，精准挖掘用户</p>
-
-                                    <p>多媒体信息流投放，综合性推广</p>
-
-                                    <p>阶段式效果优化，实现高ROI长期投放</p>
-                                </div>
-                                <a class="btn" href="#">案例详情</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"><span></span></div>
-                    <div class="swiper-button-next"><span></span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 新闻列表 -->
-    <section class="news show_bottom" data-scroll-watch>
-        <div class="wow sec-tit show_bottom fadeInUp">最新动态</div>
-        <div class="news-list">
-            <div class="swiper-container" id="news">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-center none-effect">
-                        <a href="#">
-                            <img src="img/2018-10-22-11-28-57.jpg" class="responsive">
-                            <div class="mask">
-                                <div class="news-tit"><span>首届中国移动广告优化师大会成功举办，千人共话移动营销新想象</span></div>
-                                <div class="news-right">
-                                    <div>活动资讯</div>
-                                    <div>2018-10-18</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide swiper-slide-center none-effect">
-                        <a href="#">
-                            <img src="img/2018-06-29-12-06-41.jpg" class="responsive">
-                            <div class="mask">
-                                <div class="news-tit"><span>有米科技入选“中国互联网20年大国品牌1000强”</span></div>
-                                <div class="news-right">
-                                    <div>新闻报道</div>
-                                    <div>2018-06-25</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide swiper-slide-center none-effect">
-                        <a href="#">
-                            <img src="img/2018-06-08-14-15-44.jpg" class="responsive">
-                            <div class="mask">
-                                <div class="news-tit"><span>某某科技整合营销再次斩获“2018 TopDigital创新奖”</span></div>
-                                <div class="news-right">
-                                    <div>新闻报道</div>
-                                    <div>2018-05-31</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="button">
-                <div class="swiper-button-prev swiper-button-white"><span></span></div>
-                <div class="swiper-button-next swiper-button-white"><span></span></div>
-            </div>
-        </div>
-        <a href="#" class="wow det show_bottom fadeInUp">更多动态</a>
-    </section>
-
-    <section class="cooper" data-stellar-background-ratio="0.75" data-stellar-vertical-offset="40">
-        <div class="sec-tit">流量主合作</div>
-        <a href="#" class="det">我要变现</a>
-    </section>
 
     <!-- 留言板 开始 -->
     <section class="message" id="message">
@@ -743,7 +480,6 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.countup.min.js"></script>
 <script src="js/stellar.js"></script>
-<script src="js/index.js"></script>
 <script>
     $(function () {
 

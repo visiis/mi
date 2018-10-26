@@ -29,13 +29,11 @@
     <script src="js/main.js?v=1.2"></script>
 
     <link rel="stylesheet" href="css/swiper.min.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/apps.css?v=1.0"/>
 </head>
-
 <body>
-
 <!-- 头部 -->
-<header class="header ">
+<header class="header on">
     <div class="container">
         <div class="header-in">
             <a href="/" title="网站名称" class="logo fl">
@@ -133,342 +131,224 @@
     </div>
 </header>
 
-<!-- 焦点图 -->
-<div class="ym-banner">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide1">
-                <div class="banner-img"
-                     style="background-position:center top;background-image: url(img/banner.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/banner.jpg');">
-                    <a href="javascript:void(0)" style="display:block;width:100%;height:100%;"></a></div>
-                <div class="banner-txt txt">
-                    <div class="container">
-                        <div class="wow txt1 fadeInUp">移动营销 选我们</div>
-                        <div class="wow txt2 fadeInUp">效果突出的全球化移动广告与营销平台</div>
-                        <a class="wow btn fadeInUp" style="animation-delay:1s;-webkit-animation-delay:1s;"
-                           href="#">我要投放</a>
-                    </div>
-                </div>
-            </div>
-
+<div class="banner">
+    <picture >
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="img/2018-08-01-17-57-49.jpg" media="(max-width: 768px)">
+        <source srcset="img/2018-04-19-11-08-56.jpg">
+        <!--[if IE 9]></video><![endif]-->
+        <!-- 回退 -->
+        <img src="img/2018-04-19-11-08-56.jpg" alt="广告代理" class="responsive">
+    </picture>
+    <div class="apps-txt">
+        <div class="container">
+            <div class="wow show_bottom fadeInUp">为产品找到最合适的流量资源-文字变化</div>
         </div>
-        <div class="swiper-button-prev"><span></span></div>
-        <div class="swiper-button-next"><span></span></div>
-        <ul class="swiper-pagination autoplay"></ul>
-        <div class="mouse"></div>
     </div>
 </div>
 
-<!-- 内容区 -->
+<div class="main-menu">
+    <div class="container">
+        <a href="#" class="">用户获取</a>
+        <a href="#"  class="cur">标题变化</a>
+        <a href="#" class="">广告代理</a>
+    </div>
+</div>
 <article>
 
-    <!-- 互联网 -->
-    <section class="profile">
+    <!-- 关于我们内容变化 开始-->
+    <section class="apps-intro aso-intro">
         <div class="container">
-            <div class="wow sec-tit show_bottom fadeInUp">丰富的广告资源, 覆盖85%移动互联网用户</div>
-            <div class="wow profile-con fadeInUp" style="animation-delay:.5s;-webkit-animation-delay:.5s; ">
-                <p>整合全球跨平台APP超过30万款，日均竞价的广告流量超过53亿。In-App、DSP、社媒流量应有尽有。</p>
-                <p>足不出户与全球优质用户互联，将您优质的商业信息传递给最需要的人群。</p>
-            </div>
-            <div class="map-container" data-scroll-watch>
-                <picture>
-                    <!--[if IE 9]>
-                    <video style="display: none;"><![endif]-->
-                    <source srcset="img/map-phone.jpg" media="(max-width: 1200px)">
-                    <source srcset="img/map.jpg">
-                    <!--[if IE 9]></video><![endif]-->
-                    <!-- 回退 -->
-                    <img src="img/map.jpg" class="img-responsive"/>
-                </picture>
-                <div class="dot dot1"><span></span>美国</div>
-                <div class="dot dot2">英国<span></span></div>
-                <div class="dot dot3"><span></span>德国</div>
-                <div class="dot dot4"><span></span>俄罗斯</div>
-                <div class="dot dot5">北京<span></span></div>
-                <div class="dot dot6">韩国<span></span></div>
-                <div class="dot dot7"><span></span>日本</div>
-                <div class="dot dot8">上海<span></span></div>
-                <div class="dot dot9"><span></span>杭州</div>
-                <div class="dot dot10">广州<span></span></div>
-                <div class="dot dot11"><span></span>深圳</div>
-                <div class="dot dot12">印度<span></span></div>
-                <div class="dot dot13"><span></span>澳大利亚</div>
-            </div>
-            <a class="wow btn fadeInUp" data-scroll-watch href="#message">我要投放广告</a>
+            <div class="wow main-tit show_bottom fadeInUp" >什么是ASO</div>
+            <div class="wow main-txt show_bottom fadeInUp" >ASO全称是App Store  Optimization，即应用商店优化。有米 ASO 是依托有米科技移动营销<br>
+                体系的海量媒体资源，立足App Store    生态，致力于运用大数据挖掘技术，提供数据分析、<br>
+                数据监测、关键词优化、榜单效果、竞品分析等全景化 ASO 营销服务。<br></div>
         </div>
     </section>
-
-    <!-- 我们的优势 -->
-    <section class="advantage">
-        <div class="wow sec-tit show_bottom fadeInUp">我们的优势</div>
-        <div class="advantage-list">
-            <ul>
-                <li class="img_scale">
-                    <a href="javascrpit:void(0)" onclick="return false;">
-                        <div class="advantage-img"><img src="img/banner2.png"/></div>
-                        <div class="mask">
-                            <div class="con-warp">
-                                <div class="number">01</div>
-                                <div class="tit">创新产品</div>
-                                <div class="summary">众多行业首创的广告形式，多样化创意玩转流量，独有的内容媒体资源，品效共振，助力客户登顶营销巅峰！</div>
-                                <!-- <div class="det">了解详情</div> -->
-                            </div>
+    <section class="choose">
+        <div class="container">
+            <div class="wow main-tit show_bottom fadeInUp" >为什么要选择有米ASO</div>
+            <div class="choose-list">
+                <ul>
+                    <li class="wow show_bottom fadeInUp" data-scroll-watch>
+                        <div class="choose-icon"><img src="upimg/choose-icon1.png"/></div>
+                        <div class="choose-txt">
+                            <p>积分墙命名者</p>
+                            <p>专业解决iOS产品推广难题</p>
                         </div>
-                    </a>
-                </li>
-                <li class="img_scale">
-                    <a href="javascrpit:void(0)" onclick="return false;">
-                        <div class="advantage-img"><img src="img/banner3.png"/></div>
-                        <div class="mask">
-                            <div class="con-warp">
-                                <div class="number">02</div>
-                                <div class="tit">领先技术</div>
-                                <div class="summary">2800个数据标签，多维度描绘精准用户画像，独家防作弊系统，实时过滤无效流量，提供数据工具，提升优化效率。</div>
-                                <!-- <div class="det">了解详情</div> -->
-                            </div>
+                    </li>
+                    <li class="wow show_bottom fadeInUp" data-scroll-watch>
+                        <div class="choose-icon"><img src="upimg/choose-icon2.png"/></div>
+                        <div class="choose-txt">
+                            <p>顶级优化师团队</p>
+                            <p>保证效果真实、优质、高效、持久</p>
                         </div>
-                    </a>
-                </li>
-                <li class="img_scale">
-                    <a href="javascrpit:void(0)" onclick="return false;">
-                        <div class="advantage-img"><img src="img/banner4.png"/></div>
-                        <div class="mask">
-                            <div class="con-warp">
-                                <div class="number">03</div>
-                                <div class="tit">精细运营</div>
-                                <div class="summary">垂直行业解决方案，精细化运营，以数据说话。优化师团队7*24小时专业服务，转化率一高再高！</div>
-                                <!-- <div class="det">了解详情</div> -->
-                            </div>
+                    </li>
+                    <li class="wow show_bottom fadeInUp" data-scroll-watch>
+                        <div class="choose-icon"><img src="upimg/choose-icon3.png"/></div>
+                        <div class="choose-txt">
+                            <p>行业最Top的优化工具</p>
+                            <p>一站式完成关键词优化+榜位提升+搜索展示</p>
                         </div>
-                    </a>
-                </li>
-            </ul>
-            <div class="clearfix"></div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
         </div>
     </section>
-
-    <!-- 成功案例 -->
-    <section class="case">
-        <div class="wow sec-tit show_bottom fadeInUp" id="case" data-scroll-watch>成功案例</div>
-        <div class="case-con">
+    <section class="business">
+        <div class="container">
+            <div class="wow main-tit show_bottom fadeInUp" >我们能做什么</div>
+            <div class="business-list aso-business-list">
+                <ul>
+                    <li class="wow show_bottom fadeInUp" data-scroll-watch>
+                        <div class="warp">
+                            <div class="business-icon"><img src="upimg/bussiness-icon1.png"/></div>
+                            <div class="business-con">
+                                <div class="business-tit">App Store 数据</div>
+                                <div class="business-txt">实时监控 120万+ 的中国区 App 榜单，抓取 100万+ 关键词并分析其热度趋势，为您提供全面及时的数据。</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow show_bottom fadeInUp" data-scroll-watch>
+                        <div class="warp">
+                            <div class="business-icon"><img src="upimg/bussiness-icon2.png"/></div>
+                            <div class="business-con">
+                                <div class="business-tit">App 推广情报</div>
+                                <div class="business-txt">提供 iOS 应用在 ASO 推广、苹果搜索广告投放的情报信息，助你洞察竞品推广策略。</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow show_bottom fadeInUp" data-scroll-watch>
+                        <div class="warp">
+                            <div class="business-icon"><img src="upimg/bussiness-icon3.png"/></div>
+                            <div class="business-con">
+                                <div class="business-tit">Search Ads 投放服务</div>
+                                <div class="business-txt">Search Ads 上线以来，我们已经为游戏、电商等行业数十家广告主提供投放服务，帮助其获取高质量的真实用户。</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <p class="attention">原“有米 ASO”已正式升级为“ App Growing营销数据分析平台”！<a target="_banlk" href="https://appgrowing.cn/  ">了解更多</a></p>
+        </div>
+    </section>
+    <section class="dap-case xiugai-item">
+        <div class="main-tit">投放案例</div>
+        <div class="scene-item ">
             <div class="container">
-
-                <div class="swiper-container container case-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="case-left"><img src="img/818.png"/></div>
-                            <div class="case-right">
-                                <div class="num-list">
-                                    <ul>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">1.2</span>亿
-                                                </div>
-                                                <div class="counter-txt">曝光量</div>
-                                            </div>
-                                        </li>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">365.44</span>%
-                                                </div>
-                                                <div class="counter-txt">新增激活用户数环比上涨</div>
-                                            </div>
-                                        </li>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">100</span>%
-                                                </div>
-                                                <div class="counter-txt">项目KPI完成率</div>
-                                            </div>
-                                        </li>
-
-
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="case-txt">多素材组合投放高效成交燃爆“电商剁手节”</div>
-                                <div class="case-info">
-
-                                    <p>多人群包组合，精准定向目标</p>
-
-                                    <p>海量高质素材，充分抓住用户</p>
-
-                                    <p>高频监测，快速优化</p>
-                                </div>
-                                <a class="btn" href="#">案例详情</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="case-left"><img src="img/819.png"/></div>
-                            <div class="case-right">
-                                <div class="num-list">
-                                    <ul>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">10</span>万+
-                                                </div>
-                                                <div class="counter-txt">半月激活用户</div>
-                                            </div>
-                                        </li>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">3000</span>+
-                                                </div>
-                                                <div class="counter-txt">日均导入量</div>
-                                            </div>
-                                        </li>
-
-
-                                        <li>
-                                            <div class="num-warp">
-                                                <div class="counter-number"><span class="counter"
-                                                                                  data-counter-time="500">40</span>+
-                                                </div>
-                                                <div class="counter-txt">素材创意制作</div>
-                                            </div>
-                                        </li>
-
-
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="case-txt">综合运用社交流量为龙之谷导入优质用户</div>
-                                <div class="case-info">
-
-                                    <p>In-Apps视频广告触达，精准挖掘用户</p>
-
-                                    <p>多媒体信息流投放，综合性推广</p>
-
-                                    <p>阶段式效果优化，实现高ROI长期投放</p>
-                                </div>
-                                <a class="btn" href="#">案例详情</a>
-                            </div>
+                <div class="scene-pic" data-scroll-watch>
+                    <div class="scene-paper" style="background-image:url(upimg/2018-04-27-16-15-49.png);">
+                        <div class="bg-decor">
+                            <div class="bg-capt"><img src="upimg/2018-04-27-16-25-30.png" alt=""></div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"><span></span></div>
-                    <div class="swiper-button-next"><span></span></div>
                 </div>
+                <div class="scene-text">
+                    <div>
+                        <div class="case-item">
+                            <div class="tit">
+                                万达飞凡                                </div>
+                            <p>
+                                用ASO优化直击核心用户，让万达飞凡有效找到潜在的目标客户群，提高在购物、美食、O2O等市场的用户覆盖率。                                </p>
+                        </div>
+                        <div class="case-item">
+                            <div class="tit">
+                                广告形式
+                            </div>
+                            <p>
+                                DSP+ASO                                </p>
+                        </div>
+                        <div class="case-item">
+                            <div class="tit">
+                                营销痛点
+                            </div>
+                            <p>
+                                如何让飞凡迅速热门关键词的榜单排名，带动自然用户下载量的激增。                                </p>
+                        </div>
+                        <div class="case-item">
+                            <div class="tit">
+                                投放效果
+                            </div>
+                            <p>
+                                在App Store中实现25个关键词的优化提升，获得超过100万独立用户下载，用户7日平均留存率高出其它渠道平均值6个点。                                </p>
+                        </div>
+                        <div class="number">
+                            <div>
+
+                                <div>
+                                    <span>100W+</span>
+                                    <span>总用户下载量</span>
+
+                                </div>
+                            </div>
+
+                            ×                                <div>
+
+                            <div>
+                                <span>6个点</span>
+                                <span>7日平均留存率</span>
+
+                            </div>
+                        </div>
+
+                            ×                                <div>
+
+                            <div>
+                                <span>25个</span>
+                                <span>优化提升关键词</span>
+
+                            </div>
+                        </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </section>
+    <!-- 关于我们内容变化 结束-->
 
-    <!-- 新闻列表 -->
-    <section class="news show_bottom" data-scroll-watch>
-        <div class="wow sec-tit show_bottom fadeInUp">最新动态</div>
-        <div class="news-list">
-            <div class="swiper-container" id="news">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-center none-effect">
-                        <a href="#">
-                            <img src="img/2018-10-22-11-28-57.jpg" class="responsive">
-                            <div class="mask">
-                                <div class="news-tit"><span>首届中国移动广告优化师大会成功举办，千人共话移动营销新想象</span></div>
-                                <div class="news-right">
-                                    <div>活动资讯</div>
-                                    <div>2018-10-18</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide swiper-slide-center none-effect">
-                        <a href="#">
-                            <img src="img/2018-06-29-12-06-41.jpg" class="responsive">
-                            <div class="mask">
-                                <div class="news-tit"><span>有米科技入选“中国互联网20年大国品牌1000强”</span></div>
-                                <div class="news-right">
-                                    <div>新闻报道</div>
-                                    <div>2018-06-25</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide swiper-slide-center none-effect">
-                        <a href="#">
-                            <img src="img/2018-06-08-14-15-44.jpg" class="responsive">
-                            <div class="mask">
-                                <div class="news-tit"><span>某某科技整合营销再次斩获“2018 TopDigital创新奖”</span></div>
-                                <div class="news-right">
-                                    <div>新闻报道</div>
-                                    <div>2018-05-31</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="button">
-                <div class="swiper-button-prev swiper-button-white"><span></span></div>
-                <div class="swiper-button-next swiper-button-white"><span></span></div>
-            </div>
-        </div>
-        <a href="#" class="wow det show_bottom fadeInUp">更多动态</a>
-    </section>
-
-    <section class="cooper" data-stellar-background-ratio="0.75" data-stellar-vertical-offset="40">
-        <div class="sec-tit">流量主合作</div>
-        <a href="#" class="det">我要变现</a>
-    </section>
-
-    <!-- 留言板 开始 -->
     <section class="message" id="message">
         <div class="container">
             <div class="wow sec-tit show_bottom fadeInUp">请留下您的联系方式，我们将马上与您联系</div>
-            <form class="wow message-form show_bottom fadeInUp" method="post" action="#" id="msg">
-                <input type="hidden" name="formToken" value="bf2b42ba8746a95d5ce67d9365151243">
+            <form class="wow message-form show_bottom fadeInUp" method="post" action="#" id="msg" >
+                <input type="hidden" name="formToken" value="522a3657cedf2448f708f6b4b91f6b87">
                 <div class="input-inline">
                     <div class="msg-ipt msg-ipt1">
                         <label class="msg-icon"></label>
-                        <input type="text" name="name" placeholder="公司名称" autocomplete="off" data-rule-check="true"
-                               data-msg-check="请填写公司名称" maxlength="30" data-rule-namecheck="true"
-                               data-msg-namecheck="公司名称不能为纯数字！"/>
+                        <input type="text" name="name" placeholder="公司名称" autocomplete="off" data-rule-check="true" data-msg-check="请填写公司名称" maxlength="30" data-rule-namecheck="true" data-msg-namecheck="公司名称不能为纯数字！"/>
                     </div>
                     <div class="msg-ipt msg-ipt2">
                         <label class="msg-icon"></label>
-                        <input type="text" name="name2" placeholder="姓名" autocomplete="off" required
-                               data-msg-required="请填写姓名" maxlength="20" data-rule-namecheck="true"
-                               data-msg-namecheck="姓名不能为纯数字！"/>
+                        <input type="text" name="name2" placeholder="姓名" autocomplete="off" required data-msg-required="请填写姓名" maxlength="20" data-rule-namecheck="true" data-msg-namecheck="姓名不能为纯数字！"/>
                     </div>
                     <div class="clearfix"></div>
                 </div>
 
                 <div class="check-item">
-                    <div class="checkbox"><input type="checkbox" name="single" value="1" data-rule-check="true"
-                                                 data-msg-check=""/></div>
+                    <div class="checkbox"><input type="checkbox" name="single" value="1" data-rule-check="true" data-msg-check=""/></div>
                     <label>我是个人广告主</label>
                 </div>
                 <div class="input-inline">
                     <div class="msg-ipt msg-ipt3">
                         <label class="msg-icon"></label>
-                        <input type="text" name="tell" placeholder="手机" autocomplete="off" required
-                               data-rule-mobile="true" data-msg-required="请填写手机号码" data-msg-mobile="请输入正确的手机号码！">
+                        <input type="text" name="tell" placeholder="手机" autocomplete="off" required data-rule-mobile="true" data-msg-required="请填写手机号码" data-msg-mobile="请输入正确的手机号码！">
                     </div>
                     <div class="msg-ipt msg-ipt4">
                         <label class="msg-icon"></label>
-                        <input type="text" name="email" placeholder="邮件" autocomplete="off" data-rule-mail="true"
-                               data-msg-mail="请输入正确的邮件地址！">
+                        <input type="text" name="email" placeholder="邮件" autocomplete="off" data-rule-mail="true" data-msg-mail="请输入正确的邮件地址！" >
                     </div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="input-inline">
                     <div class="select-warp select-warp1">
                         <label class="msg-icon"></label>
-                        <select class="wide" name="method">
+                        <select class="wide" name="method" >
                             <option value='' disabled selected style='display:none;'>我是从以下渠道了解到有米科技的</option>
                             <option value="展会活动">展会活动</option>
                             <option value="行业资讯">行业资讯</option>
@@ -481,7 +361,7 @@
                     </div>
                     <div class="select-warp select-warp2">
                         <label class="msg-icon"></label>
-                        <select class="wide" name="business">
+                        <select class="wide" name="business" >
                             <option value='' disabled selected style='display:none;'>咨询业务</option>
                             <option value="ASO优化">ASO优化</option>
                             <option value="APP推广">APP推广</option>
@@ -495,12 +375,10 @@
                 </div>
                 <div class="msg-ipt msg-ipt7">
                     <label class="msg-icon"></label>
-                    <textarea name="require" required data-msg-required="请填写需求" autocomplete="off" placeholder="您的需求"
-                              data-rule-mssage="true" data-msg-mssage="你的留言中含有特殊字符！" class="require"
-                              maxlength="100"></textarea>
+                    <textarea  name="require" required data-msg-required="请填写需求" autocomplete="off" placeholder="您的需求" data-rule-mssage="true" data-msg-mssage="你的留言中含有特殊字符！" class="require" maxlength="100"></textarea>
                 </div>
                 <div class="clearfix"></div>
-                <button class="wow det show_bottom fadeInUp" type="submit">预约咨询</button>
+                <button  class="det show_bottom" data-scroll-watch type="submit">预约咨询</button>
             </form>
             <div class="clearfix"></div>
         </div>
@@ -509,85 +387,88 @@
     <script type="text/javascript">
 
         //点击我是个人广告主，checkbox样式修改，企业名称样式变化，
-        $('.checkbox').click(function () {
-            if (!$(this).hasClass('disabled')) {
-                if ($("input[name='single']").is(":checked")) {
+        $('.checkbox').click(function(){
+            if(!$(this).hasClass('disabled')){
+                if($("input[name='single']").is(":checked")){
                     $(this).addClass('cur');
-                    $("input[name='name']").attr('disabled', 'disabled');
-                    $(".msg-ipt1").css({'background': '#f0f2f5'});
+                    $("input[name='name']").attr('disabled','disabled');
+                    $(".msg-ipt1").css({'background':'#f0f2f5'});
                     $('.msg-ipt1 .error').html('');
-                } else {
+                }else{
                     $(this).removeClass('cur');
                     $("input[name='name']").removeAttr("disabled");
-                    $(".msg-ipt1").css({'background': '#ffffff'});
+                    $(".msg-ipt1").css({'background':'#ffffff'});
 
                 }
             }
 
         });
         //企业名称输入框填写之后，checkbox不能再选中，变灰
-        $("input[name='name']").blur(function () {
-            var name = $(this).val();
-            if (name != '') {
+        $("input[name='name']").blur(function(){
+            var name=$(this).val();
+            if(name!=''){
                 $('.checkbox').addClass('disabled');
-                $('.checkbox').attr('disabled', 'disabled');
-            } else {
+                $('.checkbox').attr('disabled','disabled');
+            }else{
                 $('.checkbox').removeClass('disabled');
                 $('.checkbox').removeAttr("disabled");
             }
         });
 
         //下拉列表没有选择不能填写textarea内容
-        $("select[name='method']").change(function () {
+        $("select[name='method']").change(function(){
             $('.select-warp1').find('.error').html('');
             $("textarea[name='require']").removeAttr("disabled");
-            $(this).parents('.select-warp1').find('.nice-select .current').css({'color': '#333', 'fontSize': '16px'});
+            $(this).parents('.select-warp1').find('.nice-select .current').css({'color':'#333','fontSize':'16px'});
         });
-        $("select[name='business']").change(function () {
+        $("select[name='business']").change(function(){
             $('.select-warp2').find('.error').html('');
             $("textarea[name='require']").removeAttr("disabled");
-            $(this).parents('.select-warp2').find('.nice-select .current').css({'color': '#333', 'fontSize': '16px'});
+            $(this).parents('.select-warp2').find('.nice-select .current').css({'color':'#333','fontSize':'16px'});
         });
-        $("textarea[name='require']").focus(function () {
-            var method = $("select[name='method']").val();
-            var business = $("select[name='business']").val();
-            if (method == null) {
+        $("textarea[name='require']").focus(function(){
+            var method=$("select[name='method']").val();
+            var business=$("select[name='business']").val();
+            if(method==null){
                 $('.select-warp1').find('.error').html('请选择了解渠道!');
-                $(this).attr('disabled', 'disabled');
+                $(this).attr('disabled','disabled');
             }
-            if (business == null) {
+            if(business==null){
                 $('.select-warp2').find('.error').html('请选择咨询业务!');
-                $(this).attr('disabled', 'disabled');
+                $(this).attr('disabled','disabled');
             }
-            if (method != null && business != null) {
+            if(method!=null&&business!=null){
                 $(this).removeAttr("disabled");
             }
         });
 
 
+
+
         //表单提交
         $(".message-form").validate({
-            debug: true,
+            debug:true,
 
-            submitHandler: function (form) {
+            submitHandler: function(form) {
                 var data = $(form).serialize();
-                var business = $("select[name='business']").val();
+                var business=$("select[name='business']").val();
                 var url = $(form).attr('action');
                 $.ajax({
-                    url: url,
-                    dataType: "json",
-                    data: data,
-                    type: "post",
-                    success: function (msg) {
-                        if (msg == '1') {
-                            lyAlert('预约成功！感谢您的预约，稍后会有专业人员与您联系。', 3000);
+                    url:url,
+                    dataType:"json",
+                    data:data,
+                    type:"post",
+                    success:function(msg){
+                        if(msg == '1')
+                        {
+                            lyAlert('预约成功！感谢您的预约，稍后会有专业人员与您联系。',3000);
                             $('input,textarea').val('');
                             $('.checkbox').removeClass('disabled');
                             $('.checkbox').removeAttr("disabled");
                             _hmt.push(['_trackEvent', '咨询', '预约咨询', business]);
                             window.gtag('event', '预约咨询', {'event_category': '咨询', 'event_label': business});
-                        } else if (msg['status'] == '0') {
-                            lyAlert('预约失败！请再次预约。', 3000);
+                        }else if(msg['status'] == '0'){
+                            lyAlert('预约失败！请再次预约。',3000);
                             $('input,textarea').val('');
                             $('.checkbox').removeClass('disabled');
                             $('.checkbox').removeAttr("disabled");
@@ -599,7 +480,7 @@
         })
 
     </script>
-    <!-- 留言板 结束 -->
+
 </article>
 
 <!-- 尾部 -->
@@ -743,7 +624,6 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.countup.min.js"></script>
 <script src="js/stellar.js"></script>
-<script src="js/index.js"></script>
 <script>
     $(function () {
 
