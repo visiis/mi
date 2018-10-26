@@ -7,9 +7,6 @@ $(function(){
         $('body').css({'font-family':'Microsoft YaHei'});
     }
     var isMac = (navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel");
-     if (isMac) {
-        $('body').css({'font-family':'PingFang'});
-    }
 	//导航栏hover
 	$('.menu>ul>li,.nav-btn').stop(true).mouseenter(function(){
         $('.header').addClass('on');
